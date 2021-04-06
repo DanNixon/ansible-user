@@ -1,0 +1,22 @@
+---
+- name: Ensure prerequisites are installed
+  become: true
+  package:
+    name:
+      - fontconfig
+      - unzip
+    state: present
+
+- name: Ensure font directory exists
+  file:
+    path: "{{ ansible_user_dir }}/.fonts/"
+    state: directory
+    mode: "u=rwx,g=,o="
+
+- name: Ensure font files are available
+  unarchive:
+    src: "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/{{ item }}.zip"
+    dest: "{{ ansible_user_dir }}/.fonts/"
+    remote_src: true
+  loop: "{{ nerdfont_fonts }}"
+  notify: Rebuild font cache
