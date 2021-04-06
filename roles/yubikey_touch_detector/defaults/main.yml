@@ -1,0 +1,3 @@
+---
+yubikey_touch_detector_verbose: false
+yubikey_touch_detector_libnotify: true
