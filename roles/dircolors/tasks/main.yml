@@ -1,0 +1,6 @@
+---
+- name: Ensure dircolors config is present
+  template:
+    src: dir_colors.j2
+    dest: "{{ dircolors_dest }}"
+    mode: "u=r,g=,o="

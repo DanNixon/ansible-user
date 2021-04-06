@@ -1,0 +1,32 @@
+---
+dircolors_dest: "{{ ansible_user_dir }}/.dir_colors"
+
+# Attribute codes:
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+dircolors_configs:
+  - terminal:
+      - "*"
+    config:
+      RESET: 00
+      DIR: 00;34
+      LINK: 00;36
+      MULTIHARDLINK: 00
+      FIFO: 40;33
+      SOCK: 00;35
+      DOOR: 00;35
+      BLK: 40;33;01
+      CHR: 40;33;01
+      ORPHAN: 40;31;01
+      MISSING: 00
+      SETUID: 37;41
+      SETGID: 30;43
+      CAPABILITY: 30;41
+      STICKY_OTHER_WRITABLE: 30;42
+      OTHER_WRITABLE: 34;42
+      STICKY: 37;44
+      EXEC: 00;32
+    files: []

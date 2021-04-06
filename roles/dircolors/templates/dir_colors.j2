@@ -1,0 +1,17 @@
+{% for conf in dircolors_configs %}
+{% for term in conf.terminal %}
+TERM {{ term }}
+{% endfor %}
+
+{% for k, v in conf.config.items() %}
+{{ k }} {{ v }}
+{% endfor %}
+
+{% for fc in conf.files %}
+# {{ fc.name }}
+{% for m in fc.match %}
+{{ m }} {{ fc.color }}
+{% endfor %}
+{% endfor %}
+
+{% endfor %}
