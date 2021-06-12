@@ -1,5 +1,5 @@
 ---
-- name: Ensure dircolors config is present
+- name: Ensure config is present
   template:
     src: dir_colors.j2
     dest: "{{ dircolors_dest }}"
