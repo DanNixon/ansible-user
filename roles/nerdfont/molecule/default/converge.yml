@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+
+  vars:
+    nerdfont_fonts:
+      - DejaVuSansMono
+
+  roles:
+    - nerdfont
