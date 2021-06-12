@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+
+  vars:
+    base16_shell_theme: material-darker
+
+  roles:
+    - base16_shell

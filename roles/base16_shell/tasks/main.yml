@@ -1,4 +1,10 @@
 ---
+- name: Ensure Git is installed
+  become: true
+  package:
+    name: git
+    state: present
+
 - name: Ensure target directory exists
   file:
     path: "{{ base16_shell_target_dir }}"
