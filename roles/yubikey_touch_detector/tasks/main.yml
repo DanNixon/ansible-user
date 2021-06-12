@@ -23,3 +23,5 @@
     enabled: true
     state: started
     scope: user
+  tags:
+    - molecule-notest
