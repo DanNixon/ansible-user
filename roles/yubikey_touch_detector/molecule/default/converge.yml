@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - yubikey_touch_detector
+    - dannixon.yubikey_touch_detector

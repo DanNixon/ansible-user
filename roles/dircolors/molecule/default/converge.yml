@@ -40,4 +40,4 @@
               - .wav
 
   roles:
-    - dircolors
+    - dannixon.dircolors
