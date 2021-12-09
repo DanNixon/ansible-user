@@ -16,6 +16,7 @@ text qr
 text copy once
 text copy
 text
+edit
 EOF
 );
 
@@ -43,6 +44,9 @@ case "$mode" in
     ;;
   'otp type')
     pass otp "$pwname" | tr -d '\n' | wtype -
+    ;;
+  'edit')
+    pass edit "$pwname"
     ;;
   *)
     exit 1
