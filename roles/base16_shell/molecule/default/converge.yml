@@ -6,4 +6,4 @@
     base16_shell_theme: material-darker
 
   roles:
-    - dannixon.base16_shell
+    - dannixon.user.base16_shell
