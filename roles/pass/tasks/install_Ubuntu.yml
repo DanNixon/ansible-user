@@ -1,6 +1,6 @@
 ---
 - name: Ensure pass is installed
   become: true
-  package:
+  ansible.builtin.package:
     name: pass
     state: present

@@ -1,18 +1,18 @@
 ---
 - name: Ensure yubikey-touch-detector is installed
   become: true
-  package:
+  ansible.builtin.package:
     name: yubikey-touch-detector
     state: present
 
 - name: Ensure configuration directory exists
-  file:
+  ansible.builtin.file:
     path: "{{ yubikey_touch_detector_config_dir }}"
     state: directory
     mode: "u=rwx,g=,o="
 
 - name: Ensure configuration is present
-  template:
+  ansible.builtin.template:
     src: service.conf.j2
     dest: "{{ yubikey_touch_detector_config_dir }}/service.conf"
     mode: "u=r,g=,o="

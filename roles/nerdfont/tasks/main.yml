@@ -1,20 +1,20 @@
 ---
 - name: Ensure prerequisites are installed
   become: true
-  package:
+  ansible.builtin.package:
     name:
       - fontconfig
       - unzip
     state: present
 
 - name: Ensure font directory exists
-  file:
+  ansible.builtin.file:
     path: "{{ ansible_user_dir }}/.fonts/"
     state: directory
     mode: "u=rwx,g=,o="
 
 - name: Ensure font files are available
-  unarchive:
+  ansible.builtin.unarchive:
     src: "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/{{ item }}.zip"
     dest: "{{ ansible_user_dir }}/.fonts/"
     remote_src: true

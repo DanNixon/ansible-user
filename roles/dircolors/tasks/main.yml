@@ -1,6 +1,6 @@
 ---
 - name: Ensure config is present
-  template:
+  ansible.builtin.template:
     src: dir_colors.j2
     dest: "{{ dircolors_dest }}"
     mode: "u=r,g=,o="
