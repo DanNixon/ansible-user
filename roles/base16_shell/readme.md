@@ -1,7 +1,5 @@
 # `dannixon.user.base16_shell`
 
-[![dannixon.user.base16_shell](https://github.com/DanNixon/ansible-user/actions/workflows/base16_shell.yml/badge.svg?branch=main)](https://github.com/DanNixon/ansible-user/actions/workflows/base16_shell.yml)
-
 Installs [base16-shell](https://github.com/chriskempson/base16-shell/) and sets the current theme.
 
 ## Role Variables

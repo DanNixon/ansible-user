@@ -1,7 +1,5 @@
 # `dannixon.user.yubikey_touch_detector`
 
-[![dannixon.user.yubikey_touch_detector](https://github.com/DanNixon/ansible-user/actions/workflows/yubikey_touch_detector.yml/badge.svg?branch=main)](https://github.com/DanNixon/ansible-user/actions/workflows/yubikey_touch_detector.yml)
-
 Installs and configures [yubikey-touch-detector](https://github.com/maximbaz/yubikey-touch-detector).
 
 ## Role Variables

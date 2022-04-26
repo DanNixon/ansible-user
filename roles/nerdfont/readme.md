@@ -1,7 +1,5 @@
 # `dannixon.user.nerdfont`
 
-[![dannixon.user.nerdfont](https://github.com/DanNixon/ansible-user/actions/workflows/nerdfont.yml/badge.svg?branch=main)](https://github.com/DanNixon/ansible-user/actions/workflows/nerdfont.yml)
-
 Installs a selection of [Nerd Fonts](https://www.nerdfonts.com/).
 
 ## Role Variables

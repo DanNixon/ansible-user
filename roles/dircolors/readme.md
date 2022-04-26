@@ -1,7 +1,5 @@
 # `dannixon.user.dircolors`
 
-[![dannixon.user.dircolors](https://github.com/DanNixon/ansible-user/actions/workflows/dircolors.yml/badge.svg?branch=main)](https://github.com/DanNixon/ansible-user/actions/workflows/dircolors.yml)
-
 Creates the `dircolors` configuration file.
 
 ## Role Variables
