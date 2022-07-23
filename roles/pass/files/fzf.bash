@@ -17,6 +17,8 @@ text copy once
 text copy
 text
 edit
+firefox
+firefox private
 EOF
 );
 
@@ -47,6 +49,12 @@ case "$mode" in
     ;;
   'edit')
     pass edit "$pwname"
+    ;;
+  'firefox')
+    firefox "$(pass "$pwname")"
+    ;;
+  'firefox private')
+    firefox --private-window "$(pass "$pwname")"
     ;;
   *)
     exit 1
